@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" style="min-height: 100%; position: relative">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="m-0 bg-white" style="margin-bottom: 60px">
+    <!-- nav md -> -->
+    <nav
+      class="items-center grid-cols-5 gap-4 p-3 shadow-md md:grid"
+      style="background-color: #f9f9f9"
+    >
+      <div class="w-full p-1">
+        <img
+          src="https://d13xymm0hzzbsd.cloudfront.net/1/20161227/14828510976241.svg"
+          class="h-10 mx-auto"
+        />
+      </div>
+      <div class="hidden w-full col-span-3 md:block">
+        <div class="flex items-center p-2 pl-4 bg-white rounded-full">
+          <i class="mr-1 text-gray-300 fas fa-search"></i>
+          <input
+            type="text"
+            class="flex-1 h-10 p-1 pl-2 text-sm border-none outline-none"
+            placeholder="Busca por ej zapatillas negras para hombre"
+            maxlength="70"
+          />
+        </div>
+      </div>
+
+      <div class="hidden w-full grid-cols-3 gap-2 p-2 md:grid">
+        <a class="p-1 text-center" href="#">
+          <i class="text-2xl far fa-heart"></i>
+          <p class="m-0 mt-1 text-xs text-gray-500">Favoritos</p>
+        </a>
+        <a class="p-1 text-center" href="#">
+          <i class="text-2xl fas fa-shopping-cart"></i>
+          <p class="m-0 mt-1 text-xs text-gray-500">Cuenta</p>
+        </a>
+        <a class="p-1 text-center" href="#">
+          <i class="text-2xl far fa-user"></i>
+          <p class="m-0 mt-1 text-xs text-gray-500">Cuenta</p>
+        </a>
+      </div>
+    </nav>
+    <!-- nav responsive -->
+    <footer style="position: absolute; bottom: 0; width: 100%; height: 60px">
+      <div
+        class="grid items-center w-full grid-cols-5 gap-3 p-2 shadow-md sm:gap-2 buttom-0 md:hidden"
+        style="background-color: #f9f9f9"
+      >
+        <a class="p-1 text-center" href="#">
+          <i class="text-xl fa fa-home"></i>
+          <p class="m-0 text-xs text-gray-500">Inicio</p> </a
+        ><a class="p-1 text-center" href="#">
+          <i class="text-xl fas fa-search"></i>
+          <p class="m-0 text-xs text-gray-500">Buscar</p> </a
+        ><a class="p-1 text-center" href="#">
+          <i class="text-xl far fa-heart"></i>
+          <p class="m-0 text-xs text-gray-500">Favoritos</p> </a
+        ><a class="p-1 text-center" href="#">
+          <i class="text-xl fa fa-shopping-cart"></i>
+          <p class="m-0 text-xs text-gray-500">Carrito</p> </a
+        ><a class="p-1 text-center" href="#">
+          <i class="text-xl far fa-user"></i>
+          <p class="m-0 text-xs text-gray-500">Cuenta</p>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
