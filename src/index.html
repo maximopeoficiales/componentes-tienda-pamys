@@ -15,52 +15,52 @@
   </head>
   <body class="m-0 bg-gray-100">
     <!-- nav md -> -->
-    <nav
-      class="fixed items-center w-full grid-cols-5 gap-4 p-3 shadow-md max-h-24 md:grid"
-      style="background-color: #f9f9f9"
-    >
-      <div class="w-full p-1">
-        <img
-          src="https://d13xymm0hzzbsd.cloudfront.net/1/20161227/14828510976241.svg"
-          class="h-10 mx-auto"
-        />
-      </div>
-      <div class="hidden w-full col-span-3 md:block">
-        <div class="flex items-center p-2 pl-4 bg-white rounded-full">
-          <i class="mr-1 text-gray-300 fas fa-search"></i>
-          <input
-            type="text"
-            class="flex-1 h-10 p-1 pl-2 text-sm border-none outline-none"
-            placeholder="Busca por ej zapatillas negras para hombre"
-            maxlength="70"
+    <nav class="fixed w-full p-2 shadow-md" style="background-color: #f9f9f9">
+      <div class="items-center grid-cols-5 gap-4 mx-auto md:grid max-w-7xl">
+        <div class="w-full p-1">
+          <img
+            src="https://d13xymm0hzzbsd.cloudfront.net/1/20161227/14828510976241.svg"
+            class="h-10 mx-auto"
           />
         </div>
-      </div>
+        <div class="hidden w-full col-span-3 md:block">
+          <div class="flex items-center p-2 pl-4 bg-white rounded-full">
+            <i class="mr-1 text-gray-300 fas fa-search"></i>
+            <input
+              type="text"
+              class="flex-1 h-10 p-1 pl-2 text-sm border-none outline-none"
+              placeholder="Busca por ej zapatillas negras para hombre"
+              maxlength="70"
+            />
+          </div>
+        </div>
 
-      <div class="hidden w-full grid-cols-3 gap-2 p-2 md:grid">
-        <a class="p-1 text-center" href="#">
-          <i class="text-2xl far fa-heart"></i>
-          <p class="m-0 mt-1 text-xs text-gray-500">Favoritos</p>
-        </a>
-        <a class="p-1 text-center" href="#">
-          <i class="text-2xl fas fa-shopping-cart"></i>
-          <p class="m-0 mt-1 text-xs text-gray-500">Cuenta</p>
-        </a>
-        <a class="p-1 text-center" href="#">
-          <i class="text-2xl far fa-user"></i>
-          <p class="m-0 mt-1 text-xs text-gray-500">Cuenta</p>
-        </a>
+        <div class="hidden w-full grid-cols-3 gap-2 p-2 mx-auto md:grid">
+          <a class="p-1 text-center" href="#">
+            <i class="text-2xl far fa-heart"></i>
+            <p class="m-0 mt-1 text-xs text-gray-500">Favoritos</p>
+          </a>
+          <a class="p-1 text-center" href="#">
+            <i class="text-2xl fas fa-shopping-cart"></i>
+            <p class="m-0 mt-1 text-xs text-gray-500">Carrito</p>
+          </a>
+          <a class="p-1 text-center" href="#">
+            <i class="text-2xl far fa-user"></i>
+            <p class="m-0 mt-1 text-xs text-gray-500">Cuenta</p>
+          </a>
+        </div>
       </div>
     </nav>
 
+    <!-- card-component- about  -->
     <hr />
-    <div class="mt-20">
+    <div class="mt-24">
       <div class="grid gap-4 p-2 mx-auto max-w-7xl md:grid-cols-3">
         <!-- component card about -->
         <div
           class="grid items-center grid-cols-1 p-2 mx-2 bg-white rounded-md shadow-xl justify-items-center"
         >
-          <div class="p-1 mt-1">
+          <div class="p-1 mt-1 mb-2">
             <div
               class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full"
             >
@@ -68,7 +68,7 @@
             </div>
           </div>
           <h5 class="text-xl font-bold text-gray-800 ease-linear">Ubicanos</h5>
-          <p class="mt-2 text-xs text-center" style="font-size: 0.8rem">
+          <p class="mt-2 text-sm text-center" style="font-size: 0.8rem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
             alias. Lorem ipsum dolor sit amet.
           </p>
@@ -122,7 +122,11 @@
         </div>
       </div>
     </div>
+    <hr />
+    <!-- card-component- about -->
 
+    
+    
     <!-- footer creditos -->
     <footer class="navbar-buttom" class="mb-60px-hidden-sm">
       <div
@@ -163,5 +167,7 @@
         </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    scrip
   </body>
 </html>
