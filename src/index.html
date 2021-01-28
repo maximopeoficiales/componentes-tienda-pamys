@@ -10,12 +10,19 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="/src/css/tailwind.css" />
     <link rel="stylesheet" href="/src/css/custom.css" />
   </head>
-  <body class="m-0 bg-gray-100">
+  <body class="m-0 mb-60px">
     <!-- nav md -> -->
-    <nav class="fixed w-full p-2 shadow-md" style="background-color: #f9f9f9">
+    <nav
+      class="fixed top-0 z-50 w-full p-2 shadow-md"
+      style="background-color: #f9f9f9"
+    >
       <div class="items-center grid-cols-5 gap-4 mx-auto md:grid max-w-7xl">
         <div class="w-full p-1">
           <img
@@ -52,10 +59,290 @@
       </div>
     </nav>
 
-    <!-- card-component- about  -->
-    <hr />
-    <div class="mt-24">
-      <div class="grid gap-4 p-2 mx-auto max-w-7xl md:grid-cols-3">
+    <!-- container entre header - footer -->
+    <div class="mt-16 sm:mt-20">
+      <!-- slider -->
+      <div class="hidden mt-0 splide md:block">
+        <div class="splide__track">
+          <ul class="h-96 splide__list">
+            <li class="text-center splide__slide">
+              <img
+                src="https://d13xymm0hzzbsd.cloudfront.net/1/20210122/16113716105716.png"
+                alt=""
+                srcset=""
+              />
+            </li>
+            <li class="text-center splide__slide">
+              <img
+                src="https://d13xymm0hzzbsd.cloudfront.net/1/20210122/16113715686437.png"
+                alt=""
+                srcset=""
+              />
+            </li>
+            <li class="text-center splide__slide">
+              <img
+                src="https://d13xymm0hzzbsd.cloudfront.net/1/20210122/16113715978948.png"
+                alt=""
+                srcset=""
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gray-500 splide__progress">
+          <div class="splide__progress__bar"></div>
+        </div>
+      </div>
+      <img
+        src="https://d13xymm0hzzbsd.cloudfront.net/1/20210122/16113715684437.png"
+        alt=""
+        class="object-cover h-auto max-w-full sm:hidden"
+      />
+      <!-- card - info -->
+      <section class="grid gap-4 p-2 mx-auto mt-3 max-w-7xl md:grid-cols-3">
+        <article
+          class="flex items-center p-2 mx-2 rounded-lg"
+          style="background-color: #fff99b"
+        >
+          <div
+            class="flex items-center justify-center w-12 h-12 p-2 mx-2 bg-gray-100 rounded-full"
+          >
+            <i class="text-xl fas fa-store"></i>
+          </div>
+          <div class="flex-1 mx-2">
+            <b class="text-sm font-semibold text-semibold">Recoje en tienda</b>
+            <p class="text-xs text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              nemo!
+            </p>
+          </div>
+        </article>
+        <article
+          class="flex items-center p-2 mx-2 rounded-lg"
+          style="background-color: #fff99b"
+        >
+          <div
+            class="flex items-center justify-center w-12 h-12 p-2 mx-2 bg-gray-100 rounded-full"
+          >
+            <i class="text-xl fas fa-store"></i>
+          </div>
+          <div class="flex-1 mx-2">
+            <b class="text-sm font-semibold">Recoje en tienda</b>
+            <p class="text-xs text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              nemo!
+            </p>
+          </div>
+        </article>
+        <article
+          class="flex items-center p-2 mx-2 rounded-lg"
+          style="background-color: #fff99b"
+        >
+          <div
+            class="flex items-center justify-center w-12 h-12 p-2 mx-2 bg-gray-100 rounded-full"
+          >
+            <i class="text-xl fas fa-store"></i>
+          </div>
+          <div class="flex-1 mx-2">
+            <b class="text-sm font-semibold">Recoje en tienda</b>
+            <p class="text-xs text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              nemo!
+            </p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <!-- component seccion -->
+        <div class="p-2 mx-auto max-w-7xl">
+          <div class="p-2">
+            <h4 class="text-2xl font-bold">Recomendados para ti</h4>
+            <span class="text-sm text-gray-500">Tendencias y novedades</span>
+          </div>
+        </div>
+        <div class="p-2 mx-auto max-w-7xl splide splide2">
+          <div class="flex p-2 sm:justify-center splide__track">
+            <ul class="h-64 splide__list">
+              <li class="text-center splide__slide">
+                <a href="#" class="flex flex-col p-4 border-red-100">
+                  <img
+                    class="object-cover w-40 h-40"
+                    src="https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWYLQW6V2U6B2/160x240/CW3NCC3ZCRE6A.jpg"
+                    alt=""
+                  />
+                  <div class="m-0 text-left">
+                    <span
+                      class="text-white bg-blue-600 rounded-sm badge-descuento"
+                      >-15%</span
+                    >
+                    <div class="">
+                      <span class="mt-1 text-xs"><b>Nike</b> Kawa Shower</span>
+                      <div class="flex items-center justify-between mt-2">
+                        <div class="font-bold">S/ 84.10</div>
+                        <div class="text-xs text-gray-500 line-through">
+                          S/ 99.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </a>
+              </li>
+              <li class="text-center splide__slide">
+                <a href="#" class="flex flex-col p-4 border-red-100">
+                  <img
+                    class="object-cover w-40 h-40"
+                    src="https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWYLQW6V2U6B2/160x240/CW3NCC3ZCRE6A.jpg"
+                    alt=""
+                  />
+                  <div class="m-0 text-left">
+                    <span
+                      class="text-white bg-blue-600 rounded-sm badge-descuento"
+                      >-15%</span
+                    >
+                    <div class="">
+                      <span class="mt-1 text-xs"><b>Nike</b> Kawa Shower</span>
+                      <div class="flex items-center justify-between mt-2">
+                        <div class="font-bold">S/ 84.10</div>
+                        <div class="text-xs text-gray-500 line-through">
+                          S/ 99.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </a>
+              </li>
+              <li class="text-center splide__slide">
+                <a href="#" class="flex flex-col p-4 border-red-100">
+                  <img
+                    class="object-cover w-40 h-40"
+                    src="https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWYLQW6V2U6B2/160x240/CW3NCC3ZCRE6A.jpg"
+                    alt=""
+                  />
+                  <div class="m-0 text-left">
+                    <span
+                      class="text-white bg-blue-600 rounded-sm badge-descuento"
+                      >-15%</span
+                    >
+                    <div class="">
+                      <span class="mt-1 text-xs"><b>Nike</b> Kawa Shower</span>
+                      <div class="flex items-center justify-between mt-2">
+                        <div class="font-bold">S/ 84.10</div>
+                        <div class="text-xs text-gray-500 line-through">
+                          S/ 99.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </a>
+              </li>
+              <li class="text-center splide__slide">
+                <a href="#" class="flex flex-col p-4 border-red-100">
+                  <img
+                    class="object-cover w-40 h-40"
+                    src="https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWYLQW6V2U6B2/160x240/CW3NCC3ZCRE6A.jpg"
+                    alt=""
+                  />
+                  <div class="m-0 text-left">
+                    <span
+                      class="text-white bg-blue-600 rounded-sm badge-descuento"
+                      >-15%</span
+                    >
+                    <div class="">
+                      <span class="mt-1 text-xs"><b>Nike</b> Kawa Shower</span>
+                      <div class="flex items-center justify-between mt-2">
+                        <div class="font-bold">S/ 84.10</div>
+                        <div class="text-xs text-gray-500 line-through">
+                          S/ 99.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </a>
+              </li>
+              <li class="text-center splide__slide">
+                <a href="#" class="flex flex-col p-4 border-red-100">
+                  <img
+                    class="object-cover w-40 h-40"
+                    src="https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWYLQW6V2U6B2/160x240/CW3NCC3ZCRE6A.jpg"
+                    alt=""
+                  />
+                  <div class="m-0 text-left">
+                    <span
+                      class="text-white bg-blue-600 rounded-sm badge-descuento"
+                      >-15%</span
+                    >
+                    <div class="">
+                      <span class="mt-1 text-xs"><b>Nike</b> Kawa Shower</span>
+                      <div class="flex items-center justify-between mt-2">
+                        <div class="font-bold">S/ 84.10</div>
+                        <div class="text-xs text-gray-500 line-through">
+                          S/ 99.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </a>
+              </li>
+              <li class="text-center splide__slide">
+                <a href="#" class="flex flex-col p-4 border-red-100">
+                  <img
+                    class="object-cover w-40 h-40"
+                    src="https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWYLQW6V2U6B2/160x240/CW3NCC3ZCRE6A.jpg"
+                    alt=""
+                  />
+                  <div class="m-0 text-left">
+                    <span
+                      class="text-white bg-blue-600 rounded-sm badge-descuento"
+                      >-15%</span
+                    >
+                    <div class="">
+                      <span class="mt-1 text-xs"><b>Nike</b> Kawa Shower</span>
+                      <div class="flex items-center justify-between mt-2">
+                        <div class="font-bold">S/ 84.10</div>
+                        <div class="text-xs text-gray-500 line-through">
+                          S/ 99.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </a>
+              </li>
+              <li class="text-center splide__slide">
+                <a href="#" class="flex flex-col p-4 border-red-100">
+                  <img
+                    class="object-cover w-40 h-40"
+                    src="https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CWYLQW6V2U6B2/160x240/CW3NCC3ZCRE6A.jpg"
+                    alt=""
+                  />
+                  <div class="m-0 text-left">
+                    <span
+                      class="text-white bg-blue-600 rounded-sm badge-descuento"
+                      >-15%</span
+                    >
+                    <div class="">
+                      <span class="mt-1 text-xs"><b>Nike</b> Kawa Shower</span>
+                      <div class="flex items-center justify-between mt-2">
+                        <div class="font-bold">S/ 84.10</div>
+                        <div class="text-xs text-gray-500 line-through">
+                          S/ 99.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- cards -->
+      <section class="grid gap-4 p-2 mx-auto mt-3 max-w-7xl md:grid-cols-3">
         <!-- component card about -->
         <div
           class="grid items-center grid-cols-1 p-2 mx-2 bg-white rounded-md shadow-xl justify-items-center"
@@ -120,13 +407,11 @@
             >
           </div>
         </div>
-      </div>
+      </section>
     </div>
-    <hr />
+
     <!-- card-component- about -->
 
-    
-    
     <!-- footer creditos -->
     <footer class="navbar-buttom" class="mb-60px-hidden-sm">
       <div
@@ -168,6 +453,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
-    scrip
+    <script src="/src/js/index.js"></script>
   </body>
 </html>
